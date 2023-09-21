@@ -1,0 +1,38 @@
+
+
+#ifndef PWM_CONFIG_H
+#define PWM_CONFIG_H
+
+
+/*	Options:	TIM1_PWM_EDGE_ALIGNED	
+				TIM1_PWM_CENTER_ALIGNED*/
+#define		TIM1_PWM_MODE			TIM1_PWM_EDGE_ALIGNED
+
+
+/*	Options:	TIM1_UPCOUNTING	
+				TIM1_DOWNCOUNTING
+				TIM1_UP_DOWN_COUNTING (ONLY FOR CENTER_ALIGNED)*/
+#define		TIM1_COUNTING_MODE		TIM1_UPCOUNTING
+
+
+/*	Options:	TIM1_PWM_MODE1
+				TIM1_PWM_MODE2*/
+#define		TIM1_PWM_CH1_MODEx			TIM1_PWM_MODE1
+#define		TIM1_PWM_CH2_MODEx			TIM1_PWM_MODE1
+#define		TIM1_PWM_CH3_MODEx			TIM1_PWM_MODE1
+#define		TIM1_PWM_CH4_MODEx			TIM1_PWM_MODE1
+
+/*	Options:	Disable	
+				Enable	*/
+#define		TIM1_INTERRUPT_MODE		DISABLE
+
+
+/* Options:  (Choose from 1(0x0001) to 65536(0xFFFF)) */
+#define		TIM1_PRESCALER			160
+
+
+/* Options:  (Choose from 1(0x0001) to 65536(0xFFFF)) */
+#define		TIM1_AUTO_RELOAD_VALUE	1000
+
+
+#endif
